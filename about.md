@@ -1,10 +1,9 @@
 ---
 layout: page
-title: About
+title: About Geopastore
 permalink: /about/
 ---
 
-# About Geopastore
 
 Hi, I'm Guido Pastore. Geologist, runner, mountaineer and cyclist... not always in this order. 
 
