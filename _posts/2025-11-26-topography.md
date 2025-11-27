@@ -7,7 +7,9 @@ date: 2025-11-26 10:00:00 -0000
 
 ### The idea
 One day, wandering around the forest of twitter, I found a nice image of the accoung @Foglebird displaying a visual topography of Western US. He computed the percentiles of elevation dristribution for intervals of 1° of Latidude.  
-
+<p align="center">
+<img src="/assets/images/WS.JPG" alt=WS width="450">
+<p>
 I gave it a try how to replicate it with R.
 
 ### The code
@@ -41,7 +43,9 @@ ita <- elevation_30s(country="ITA", mask=TRUE)
 #elevation_30s is a hole filled CGIAR-SRTM with 90m resolution (a reasonable resolution/extent compromise)
 # use: country_codes() to get the correct ISO code for each country
 ```
+<p align="center">
 <img src="/assets/images/Ita_SRTM.jpeg" alt=ita_SRTM90 width="700">
+<p>
 
 A for cycle is nice to plot each latitude line individually.
 ```r
@@ -66,8 +70,10 @@ for (lat in seq(round(ymin(ex),0), round(ymax(ex),0), latspan)) {
 ```
 
 ### Result
+<p align="center">
 <img src="/assets/images/rect2291_2.png" alt=ita width="700">
+<p>
 
 Elevation transects of Italy. Lines represent the 25th, 50th, and 75th percentiles of the elevation distribution across 0.5° latitude bands.
 
-Explore topographical features. Can you spot the Western Alps or ***Giudicarie Line***, Po Plain, ***Belluno sincline***, Appennine front, ***Gran Sasso peak***, Gennargentu massif, ***Gargano massif***, Strait of Messina, ***Aeolian Islands***, Etna volcano, and Pantelleria Island?
+Explore topographical features. Can you spot the Western Alps or ***Giudicarie Line***, Po Plain, ***Belluno sincline***, Appennine front, ***Gran Sasso peak***, Gennargentu massif, ***Gargano massif***, Strait of Messina, ***Aeolian Islands***, Etna volcano, and ***Pantelleria Island***?
