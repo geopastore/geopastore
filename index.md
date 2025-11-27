@@ -1,7 +1,13 @@
+--- 
+layout: home 
+title: 
+list_title: ' ' 
+---
+
 <!-- Right-side profile box -->
 <div style="
     position: absolute;        /* position it relative to the page */
-    top: 400px;                /* distance from top of page */
+    top: 300px;                /* distance from top of page */
     right: 50px;               /* distance from right edge */
     width: 300px;              /* max width of the box */
     text-align: center;
@@ -9,7 +15,7 @@
 ">
 
     <img src="/assets/images/95483300-mds2022f-15668.JPG"
-         alt="My photo"
+         alt="MDS2022"
          style="width: 100%; height: auto;">
 
     <p style="margin-top: 10px;">
