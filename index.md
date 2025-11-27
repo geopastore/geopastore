@@ -1,7 +1,7 @@
 ---
 layout: page
 title: index
-permalink: /home/
+permalink: /index/
 ---
 
 This is my personal page. I would like to use it to share some ideas.
