@@ -1,6 +1,7 @@
 ---
 layout: home
 title: 
+list_title: ' ' 
 ---
 
 #### This is my personal page. I would like to use it to share some ideas.
