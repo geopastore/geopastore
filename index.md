@@ -1,7 +1,6 @@
 ---
-layout: page
-title: index
-permalink: /index/
+layout: home
+title: 
 ---
 
 This is my personal page. I would like to use it to share some ideas.
