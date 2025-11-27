@@ -38,10 +38,10 @@ get_quantile_profile <- function(r, lat, res, probs=c(0.25,0.5,0.75)) {
 With library geodata it is possible to load elevation data.
 ```r
 ita <- elevation_30s(country="ITA", mask=TRUE)
-#elevation_30s are hole filled CGIAR-SRTM 90 m resolution, a reasonable resolution/extent compromise
+#elevation_30s is a hole filled CGIAR-SRTM with 90m resolution (a reasonable resolution/extent compromise)
 # use: country_codes() to get the correct ISO code for each country
 ```
-<img src="/assets/images/Ita_SRTM.jpeg" alt=ita_SRTM90 width="300">
+<img src="/assets/images/Ita_SRTM.jpeg" alt=ita_SRTM90 width="700">
 
 A for cycle is nice to plot each latitude line individually.
 ```r
