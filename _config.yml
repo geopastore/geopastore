@@ -1,4 +1,5 @@
 title: Geopastore
 description: Welcome to my page
 theme: minima
+show_excerpts: true
 excerpt_separator: <!--more-->
