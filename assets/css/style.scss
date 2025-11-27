@@ -41,3 +41,32 @@ top: 5px;
   display: flex;
   align-items: center;
 }
+
+.profile-box {
+  position: absolute;
+  top: 300px;
+  right: 50px;
+  width: 200px;
+  text-align: center;
+  z-index: 1000;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+/* Responsive behavior for small screens */
+@media screen and (max-width: 768px) {
+  .profile-box {
+    position: static;       /* remove absolute positioning */
+    margin: 20px auto;      /* center the box */
+    width: 80%;             /* take most of screen width */
+  }
+}
+
