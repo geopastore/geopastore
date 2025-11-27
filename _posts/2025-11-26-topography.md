@@ -9,7 +9,7 @@ date: 2025-11-26 10:00:00 -0000
 One day, wandering around the forest of twitter, I found a nice image of the @Foglebird account displaying a visual topography of Western US. He computed the percentiles of elevation distribution for intervals of 1° of Latidude.  
 <p align="center">
 <img src="/assets/images/WS.JPG" alt=WS width="450">
-<p>
+</p>
 I gave it a try to replicate it with R.
 
 ### The code
@@ -46,7 +46,7 @@ ita <- elevation_30s(country="ITA", mask=TRUE)
 ```
 <p align="center">
 <img src="/assets/images/Ita_SRTM.jpeg" alt=ita_SRTM90 width="700">
-<p>
+</p>
 
 A for cycle is nice to plot each latitude line individually.
 
@@ -74,7 +74,7 @@ for (lat in seq(round(ymin(ex),0), round(ymax(ex),0), latspan)) {
 ### Result
 <p align="center">
 <img src="/assets/images/rect2291_2.png" alt=ita width="700">
-<p>
+</p>
 
 Elevation transects of Italy. Lines represent the 25th, 50th, and 75th percentiles of the elevation distribution across 0.5° latitude bands.
 
