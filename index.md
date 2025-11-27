@@ -10,7 +10,7 @@
 
     <img src="/assets/images/95483300-mds2022f-15668.JPG"
          alt="My photo"
-         style="width: 100%; height: auto; border-radius: 8px;">
+         style="width: 100%; height: auto;">
 
     <p style="margin-top: 10px;">
       This is my personal page.<br>
