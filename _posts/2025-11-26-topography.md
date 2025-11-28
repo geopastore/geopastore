@@ -10,7 +10,7 @@ One day, wandering around the forest of twitter, I found a nice image of the @Fo
 <p align="center">
 <img src="/assets/images/WS.JPG" alt=WS width="450">
 </p>
-I gave it a try to replicate it with R.
+I gave it a try to replicate it in R.
 
 ### The code
 ```r
@@ -37,7 +37,7 @@ get_quantile_profile <- function(r, lat, res, probs=c(0.25,0.5,0.75)) {
 }
 ```
 
-With library geodata it is possible to load elevation data.
+With package *geodata* is perfect to quickly load elevation data.
 
 ```r
 ita <- elevation_30s(country="ITA", mask=TRUE)
@@ -48,7 +48,7 @@ ita <- elevation_30s(country="ITA", mask=TRUE)
 <img src="/assets/images/Ita_SRTM.jpeg" alt=ita_SRTM90 width="700">
 </p>
 
-A for cycle is nice to plot each latitude line individually.
+Even though it is a bit slower, a *for loop* plots each latitude line individually, and it's enjoyable to watch the plot being populated.
 
 ```r
 latspan <- 0.5 #latitude span
@@ -65,13 +65,14 @@ for (lat in seq(round(ymin(ex),0), round(ymax(ex),0), latspan)) {
   q    <- prof$q
   
   # quantile curves plotted at real latitude
-  lines(lon, lat + scale*q[1,], col="lightgrey",  lwd=1.2)
-  lines(lon, lat + scale*q[2,], col="black",      lwd=1.4)
-  lines(lon, lat + scale*q[3,], col="darkgrey",   lwd=1.2)
+  lines(lon, lat + scale*q[1,], col="lightgrey",  lwd=1.2)  #25 percentile
+  lines(lon, lat + scale*q[2,], col="black",      lwd=1.4)  #50 percentile
+  lines(lon, lat + scale*q[3,], col="darkgrey",   lwd=1.2)  #75 percentile
 }
 ```
 
 ### Result
+The result is an unconventioanl topographical map of Italy.
 <p align="center">
 <img src="/assets/images/rect2291_2.png" alt=ita width="700">
 </p>
